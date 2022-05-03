@@ -23,7 +23,7 @@ let processor = {
     },
   
     computeFrame: function() {
-      this.context.drawImage(this.video, 0, 0, this.width, this.height);
+      //this.context.drawImage(this.video, 0, 0, this.width, this.height);
       
       let frame = this.context.getImageData(0, 0, this.width, this.height);
           let l = frame.data.length / 4;
