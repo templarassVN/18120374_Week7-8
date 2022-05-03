@@ -18,8 +18,8 @@ let processor = {
       
       let self = this;
       this.video.addEventListener("play", function() {
-          self.width = self.video.videoWidth / 2;
-          self.height = self.video.videoHeight / 2;
+          self.width = self.video.videoWidth ;
+          self.height = self.video.videoHeight;
           self.timerCallback();
         }, false);
     },
