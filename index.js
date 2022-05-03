@@ -29,11 +29,9 @@ let processor = {
           let l = frame.data.length / 4;
   
       for (let i = 0; i < l; i++) {
-        let r = frame.data[i * 4 + 0];
-        let g = frame.data[i * 4 + 1];
-        let b = frame.data[i * 4 + 2];
-        if (g > 100 && r > 100 && b < 43)
-          frame.data[i * 4 + 3] = 0;
+        
+        frame.data[i * 4 + 1] = 0;
+        frame.data[i * 4 + 2] = 0;
       }
       this.context.putImageData(frame, 0, 0);
       return;
